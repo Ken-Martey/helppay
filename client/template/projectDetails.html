@@ -1,4 +1,5 @@
 <template name="project_details">
+ {{> contribute_modal}}
  <body>
   <div class="m-scene" id="main"> <!-- Main Container -->
 
@@ -31,7 +32,10 @@
         {{#with projectDetails}}
         <div class="project-info">
           <h2 class="uppercase">{{projectName}}</h2>
-          <a href="article.html" class="waves-effect waves-light btn primary-color pull-right" id="contributeMoney"><p style="font-size: 32px;">Contribute</p></a>
+
+          <a href="article.html" class="waves-effect waves-light btn primary-color pull-right" data-toggle = "modal" data-target = "#myModal" id="contributeMoney"><p style="font-size: 32px;padding-top: 10px;
+">Contribute</p></a>
+
           <span class="small">{{donationTarget}}</span> <br>
           <p class="m-t-10 m-b-30" style="font-size: 20px; zoom:75%;">{{projectDetails}}</p>
         </div>
@@ -40,7 +44,7 @@
 
         <!-- Comments -->
         <div class="comments project-comments animated fadeinup delay-3">
-          <h3 class="uppercase">5 Comments</h3>
+          <h3 class="uppercase">Contributors</h3>
           <ul class="comments-list">
             <li>
               <img src="img/user4.jpg" alt="" class="avatar circle">
