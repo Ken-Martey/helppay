@@ -1,4 +1,5 @@
 <template name="project_details">
+ {{> contribute_modal}}
  <body>
   <div class="m-scene" id="main"> <!-- Main Container -->
 
@@ -31,7 +32,7 @@
         {{#with projectDetails}}
         <div class="project-info">
           <h2 class="uppercase">{{projectName}}</h2>
-          <a href="article.html" class="waves-effect waves-light btn primary-color pull-right">Contribute</a>
+          <button data-toggle = "modal" data-target = "#myModal" class="waves-effect waves-light btn primary-color pull-right">Contribute</button>
           <span class="small">{{donationTarget}}</span> <br>
           <!-- Unique Code: <span class="small">{{getProjectId}}</span> -->
           <p class="m-t-10 m-b-30">{{projectDetails}}</p>
