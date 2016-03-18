@@ -411,7 +411,7 @@ blockquote {
   display: none;
 }
 .h-banner {
-  height: 212px;
+  height: 300px;
   position: relative;
   z-index: 1;
 }
@@ -424,7 +424,7 @@ blockquote {
 .banner-title {
   line-height: 30px;
   padding-left: 30px;
-  font-size: 25px;
+  font-size: 65px;
 }
 .banner-title {
   position: absolute;
@@ -433,7 +433,7 @@ blockquote {
   color: #ffffff;
 }
 .banner-title {
-  font-size: 22px;
+  font-size: 50px;
   font-weight: 300;
   color: #fff;
   line-height: 56px;
@@ -603,6 +603,7 @@ footer.page-footer {
 /* Toolbar */
 
 #toolbar {
+  zoom: 270%;
   width: 100%;
   height: 56px;
   position: fixed;
@@ -1374,6 +1375,7 @@ li.your-comment {
   overflow: hidden;
 }
 .slider-sliced .slider-bottom-right {
+  /*zoom:200%;*/
   position: absolute;
   bottom: 0;
   left: 0;
