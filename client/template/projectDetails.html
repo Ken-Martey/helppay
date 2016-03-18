@@ -1,0 +1,113 @@
+<template name="project_details">
+ <body>
+  <div class="m-scene" id="main"> <!-- Main Container -->
+
+    <!-- Page Content -->
+    <div id="content" class="page">
+
+      <!-- Toolbar -->
+      <div id="toolbar" class="primary-color">
+        <div class="open-left" id="open-left" data-activates="slide-out-left">
+          <i class="ion-android-menu"></i>
+        </div>
+        <span class="title">Project Detail</span>
+        <div class="open-right" id="open-right" data-activates="slide-out">
+          <i class="ion-android-person"></i>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="animated fadeinup">
+        <!-- Project Image -->
+        {{#with projectDetails}}
+        <div class="project-image z-depth-1 animated fadein delay-1">
+          {{#with FS.GetFile 'images' picture}}
+          <img src="{{this.url}}" height="320px" alt=""/>
+          {{/with}}
+          <!-- <img src="img/product2.jpg" alt=""> -->
+        </div>
+        {{/with}}
+        <!-- Project Author -->
+        {{#with projectDetails}}
+        <div class="project-info">
+          <h2 class="uppercase">{{projectName}}</h2>
+          <a href="article.html" class="waves-effect waves-light btn primary-color pull-right">Contribute</a>
+          <span class="small">{{donationTarget}}</span> <br>
+          <!-- Unique Code: <span class="small">{{getProjectId}}</span> -->
+          <p class="m-t-10 m-b-30">{{projectDetails}}</p>
+        </div>
+        {{/with}}
+        <div class="post-author m-20 animated fadeinright delay-2">
+          <img src="img/user2.jpg" alt="" class="avatar circle">
+          <span>Kennedy Anyinatoe</span>
+          <div class="project-social-share">
+            <i class="ion-social-facebook blue-text text-darken-4"></i>
+            <i class="ion-social-twitter blue-text"></i>
+            <i class="ion-social-pinterest red-text"></i>
+          </div>
+        </div>
+
+        <!-- Comments -->
+        <div class="comments project-comments animated fadeinup delay-3">
+          <h3 class="uppercase">5 Comments</h3>
+          <ul class="comments-list">
+            <li>
+              <img src="img/user4.jpg" alt="" class="avatar circle">
+              <div class="comment-body">
+                <span class="author uppercase">Luke Noel</span>
+                <p>Awesome work!!</p>
+              </div>
+            </li>
+            <li>
+              <img src="img/user.jpg" alt="" class="avatar circle">
+              <div class="comment-body">
+                <span class="author uppercase">Joel Roksin</span>
+                <p> You have done a great job there :)</p>
+              </div>
+            </li>
+            <li>
+              <img src="img/user3.jpg" alt="" class="avatar circle">
+              <div class="comment-body">
+                <span class="author uppercase">Mike White</span>
+                <p>Keep going!</p>
+              </div>
+            </li>
+            <li>
+              <img src="img/user4.jpg" alt="" class="avatar circle">
+              <div class="comment-body">
+                <span class="author uppercase">Joel Roksin</span>
+                <p> You have done a great job there :)</p>
+              </div>
+            </li>
+            <li>
+              <img src="img/user3.jpg" alt="" class="avatar circle">
+              <div class="comment-body">
+                <span class="author uppercase">Mike White</span>
+                <p>Keep going!</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer -->
+        {{> footer}}
+
+      </div> <!-- End of Main Contents -->
+
+
+    </div> <!-- End of Page Content -->
+
+  </div> <!-- End of Page Container -->
+
+
+  <script src="js/jquery-2.1.0.min.js"></script>
+  <script src="js/jquery.swipebox.min.js"></script>
+  <script src="js/jquery.smoothState.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.mixitup.min.js"></script>
+  <script src="js/masonry.min.js"></script>
+  <script src="js/chart.min.js"></script>
+  <script src="js/functions.js"></script>
+</body>
+</template>
