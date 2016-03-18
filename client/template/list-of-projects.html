@@ -1,0 +1,124 @@
+<template name="list_of_projects">
+  <body>
+    <div class="m-scene" id="main"> <!-- Main Container -->
+
+      <!-- Page Content -->
+      <div id="content" class="grey-blue page">
+
+        <!-- Toolbar -->
+        <div id="toolbar" class="primary-color">
+          <div class="open-left" id="open-left" data-activates="slide-out-left">
+            <i class="ion-android-menu"></i>
+          </div>
+          <span class="title">Blog</span>
+          <div class="open-right" id="open-right" data-activates="slide-out">
+            <i class="ion-android-person"></i>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="animated fadeinup">
+
+          <div class="blog-card animated fadein delay-1">
+            <div class="blog-header">
+              <img class="avatar circle" src="img/user4.jpg" alt="">
+              <div class="blog-author">
+                <span>Jassie North</span>
+                <span class="small">1hour ago - 62 Share</span>
+              </div>
+            </div>
+            <div class="blog-image">
+              <img src="img/10.jpg" alt="">
+            </div>
+            <div class="blog-preview p-20">
+              <h4 class="uppercase">It really makes no sense</h4>
+              <p>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</p>
+              <a href="article.html" class="waves-effect waves-light btn primary-color">Read</a>
+            </div>
+          </div>
+
+          <div class="blog-card animated fadein delay-3">
+            <div class="blog-header">
+              <img class="avatar circle" src="img/user2.jpg" alt="">
+              <div class="blog-author">
+                <span>Jassie North</span>
+                <span class="small">1hour ago - 62 Share</span>
+              </div>
+            </div>
+            <div class="blog-image">
+              <img src="img/6.jpg" alt="">
+            </div>
+            <div class="blog-preview p-20">
+              <h4 class="uppercase">It really makes no sense</h4>
+              <p>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</p>
+              <a href="article.html" class="waves-effect waves-light btn primary-color">Read</a>
+            </div>
+          </div>
+
+          <div class="blog-card animated fadein delay-5">
+            <div class="blog-header">
+              <img class="avatar circle" src="img/user3.jpg" alt="">
+              <div class="blog-author">
+                <span>Jassie North</span>
+                <span class="small">1hour ago - 62 Share</span>
+              </div>
+            </div>
+            <div class="blog-image">
+              <img src="img/3.jpg" alt="">
+            </div>
+            <div class="blog-preview p-20">
+              <h4 class="uppercase">It really makes no sense</h4>
+              <p>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</p>
+              <a href="article.html" class="waves-effect waves-light btn primary-color">Read</a>
+            </div>
+          </div>
+
+          <!-- Floating Action Button -->
+          <div class="floating-button page-fab animated bouncein delay-3">
+            <a class="btn-floating btn-large waves-effect waves-light accent-color btn z-depth-1 modal-trigger" href="{{pathFor 'new_project'}}">
+              <i class="ion-android-add"></i>
+            </a>
+          </div>
+
+          <!-- Footer -->
+          <footer class="page-footer primary-color">
+            <div class="container">
+              <div class="row">
+                <div class="col s12">
+                  <p class="center-align grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                  <div class="center-align">
+                    <i class="ion-social-facebook m-10 white-text"></i>
+                    <i class="ion-social-twitter m-10 white-text"></i>
+                    <i class="ion-social-pinterest m-10 white-text"></i>
+                    <i class="ion-social-dribbble m-10 white-text"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright blue darken-1">
+              <div class="container">
+                2016 Codnauts
+                <a class="grey-text text-lighten-4 right" href="blog-card.html#!">Privacy Policy</a>
+              </div>
+            </div>
+          </footer>
+
+        </div> <!-- End of Main Contents -->
+
+
+      </div> <!-- End of Page Content -->
+
+    </div> <!-- End of Page Container -->
+
+
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script src="js/jquery.smoothState.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/masonry.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/functions.js"></script>
+  </body>
+</template>

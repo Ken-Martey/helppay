@@ -1,0 +1,61 @@
+
+<template name="signUp">
+<!--
+  <div class="login animated fadeIn">
+   <div class="row">
+
+    <div class="col-lg-4 col-md-4 col-xs-1"></div>
+    <div class="col-lg-4 col-md-6 col-xs-10"><h2 class="welcome">Welcome to Help Pay</h2>
+      {{> atForm state= 'signUp'}}
+    </div>
+    <div class="col-lg-4 col-md-3 col-xs-1"></div>
+
+  </div>
+
+</div> -->
+
+
+
+  <body>
+    <div class="m-scene" id="main"> <!-- Main Container -->
+
+      <!-- Page Content -->
+      <div id="content" class="grey-blue signup">
+
+        <!-- Toolbar -->
+        <div id="toolbar" class="tool-signup primary-color animated fadeindown">
+          <a href="javascript:history.back()" class="open-left">
+            <i class="ion-android-arrow-back"></i>
+          </a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="signup-form animated fadeinup delay-2 z-depth-1">
+
+          <h1>Sign Up</h1>
+          <div class="input-field">
+            <i class="ion-android-contact prefix"></i>
+            {{> atForm state= 'signUp'}}
+          </div>
+<!--
+          <a class="waves-effect waves-light btn-large accent-color width-100 m-b-20 animated bouncein delay-4" href="index.html">Signup</a>
+          <span>Have an account? <a class="primary-text" href="login.html">Login</a></span> -->
+        </div><!-- End of Main Contents -->
+
+
+      </div> <!-- End of Page Content -->
+
+    </div> <!-- End of Page Container -->
+
+
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script src="js/jquery.smoothState.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/masonry.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/functions.js"></script>
+  </body>
+</template>
