@@ -1,0 +1,2 @@
+# Helppay
+HelpPay is a mobile and SMS platform that helps people who need to raise money for good causes, easily do so from friends, well wishers and philanthropists in an easy and transparent manner using Vodafone cash. We know that most of the people we're targeting to use the platform would not be able to use the web platform and that is why we've also built the sms component to enable people with no internet access to use it.
