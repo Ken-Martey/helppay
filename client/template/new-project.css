@@ -14,3 +14,16 @@
 .control-label{
 	zoom:150%;
 }
+#ReadMore{
+	zoom:136%;
+	width: 107px
+}
+#contribute{
+	zoom:136%;
+}
+#contributeMoney{
+	zoom: 127%;
+    width: 303px;
+    height: 49px;
+    padding: 7px !important
+}
