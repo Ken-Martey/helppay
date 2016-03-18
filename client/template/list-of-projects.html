@@ -1,4 +1,5 @@
 <template name="list_of_projects">
+  {{> contribute_modal}}
   <body>
     <div class="m-scene" id="main"> <!-- Main Container -->
 
@@ -8,7 +9,7 @@
         <!-- Toolbar -->
         <div id="toolbar" class="primary-color">
           <div class="open-left" id="open-left" data-activates="slide-out-left">
-            <i class="ion-android-menu"></i>
+            <i class="fa fa-bars"></i>
           </div>
           <span class="title">Projects</span>
           <div class="open-right" id="open-right" data-activates="slide-out">
@@ -38,7 +39,7 @@
               <p>Project Details: {{projectDetails}}</p>
               <p>Donation Target: {{donationTarget}}</p>
               <a href="{{pathFor "project_details"  _id=_id}}" class="waves-effect waves-light btn primary-color" id="ReadMore">Read</a>
-              <a href="article.html" class="waves-effect waves-light btn primary-color pull-right">Contribute</a>
+              <button data-toggle = "modal" data-target = "#myModal" class="waves-effect waves-light btn primary-color pull-right">Contribute</button>
             </div>
           </div>
           {{/each}}
@@ -52,7 +53,7 @@
           </div>
 
           <!-- Footer -->
-          {{> footer}}
+          <!-- {{> footer}} -->
 
         </div> <!-- End of Main Contents -->
 
