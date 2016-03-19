@@ -1,7 +1,7 @@
 AutoForm.hooks({
   createProject:{
     onSuccess: function(operation, result, template){
-      console.log("Hekkoooo")
+     
       Router.go('/list-of-projects')
     }
   },
