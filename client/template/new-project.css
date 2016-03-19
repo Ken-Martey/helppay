@@ -27,3 +27,14 @@
     height: 70px;
     padding: 7px !important
 }
+
+.at-title{
+    zoom: 159%;
+}
+.at-form{
+	zoom: 140%;
+	overflow-x: hidden;
+}
+.at-field-email{
+	zoom:150%;
+}

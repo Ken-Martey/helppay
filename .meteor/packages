@@ -25,6 +25,7 @@ cfs:standard-packages
 cfs:gridfs
 yogiben:autoform-file
 cfs:ui
+http
 cfs:filesystem
 aldeed:autoform
 aldeed:collection2

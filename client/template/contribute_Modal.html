@@ -19,19 +19,54 @@
 
    <div class = "modal-body">
 
-    <input type="text" class="form-control" name="validate-optional" id="validate-optional" placeholder="Phone Number" style="zoom:216%">
+    <input type="text" class="form-control" name="validate-optional" id="validate-optional phone_number" placeholder="Phone Number" style="zoom:216%">
 
-    <input type="text" class="form-control" name="validate-optional" id="validate-optional" placeholder="Amount" 
+    <input type="text" class="form-control" name="validate-optional" id="validate-optional amountTransfer" placeholder="Amount" 
     style="zoom:216%">
   </div>
 
   <div class = "modal-footer">
-    <!-- <button type = "button" class = "btn btn-default" data-dismiss = "modal">
-     Close
-   </button> -->
+   <button type = "button" class = "btn btn-primary" id="donateNow">
+     Donate
+   </button>
+ </div>
 
-   <button type = "button" class = "btn btn-primary">
-     Send
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+
+</div><!-- /.modal -->
+</template>
+
+
+<template name="enterToken">
+
+  <!-- Modal -->
+  <div class = "modal fade" id = "tokenModal" tabindex = "-1" role = "dialog"
+  aria-labelledby = "myModalLabel" aria-hidden = "true">
+
+  <div class = "modal-dialog" style="margin-top: 213px;">
+    <div class = "modal-content">
+
+     <div class = "modal-header">
+      <button type = "button" class = "close" data-dismiss = "modal" aria-hidden = "true">
+        &times;
+      </button>
+
+      <h4 class = "modal-title" id = "myModalLabel" style="zoom: 158%;">
+       Thank you for donating
+     </h4>
+   </div>
+
+   <div class = "modal-body">
+
+    <input type="text" class="form-control" name="validate-optional" id="validate-optional phone_number" placeholder="Enter the token you just received on your phone" style="zoom:216%">
+
+   
+  </div>
+
+  <div class = "modal-footer">
+   <button type = "button" class = "btn btn-primary" id="enterToken">
+     Donate
    </button>
  </div>
 
