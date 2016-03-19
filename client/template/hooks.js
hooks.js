@@ -1,13 +1,12 @@
 AutoForm.hooks({
-  createProject:{
+  insertProject:{
     onSuccess: function(operation, result, template){
-     
-      Router.go('/list-of-projects')
+      Router.go('list_of_projects')
     }
   },
   onError: function(formType, error){
     console.log(error);
-  }
+  },
   // updateClub:{
   //   onSuccess: function(operation, result, template){
   //     Router.go('DashboardContent');
@@ -26,17 +25,5 @@ AutoForm.hooks({
   // onError: function(formType, error){
   //   console.log(error)
   // }
-  // insertDonation:{
-  //   onSuccess: function(operation ,result, template){
-  //     console.log(result);
-  //     Meteor.call('getTokenMessage', function(e){});
-  //     Router.go('list_of_projects')
-  //   }
-  // },
-  // onError:function(formType, error){
-  //   console.log(error)
-  // }
-  // , 
-  // onSubmit:function()
 
 })
