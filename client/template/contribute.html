@@ -1,7 +1,7 @@
-<template name="contribute_modal">
+<template name="new_contributor">
 
   <!-- Modal -->
-  <div class = "modal fade" id = "myModal" tabindex = "-1" role = "dialog"
+  <div class = "modal fade" id = "addContributors" tabindex = "-1" role = "dialog"
   aria-labelledby = "myModalLabel" aria-hidden = "true">
 
   <div class = "modal-dialog" style="margin-top: 213px;">
@@ -19,14 +19,14 @@
 
    <div class = "modal-body">
 
-    <input type="text" class="form-control" name="validate-optional" id="validate-optional phone_number" placeholder="Phone Number" style="zoom:216%">
+    <input type="text" class="form-control" name="validate-optional" id="validate-optional phone_number" placeholder="Enter Contributor Name" style="zoom:216%">
 
-    <input type="text" class="form-control" name="validate-optional" id="validate-optional amountTransfer" placeholder="Amount" 
-    style="zoom:216%">
+     <input type="text" class="form-control" name="validate-optional" id="validate-optional phone_number" placeholder="Enter Contributor Phone Number" style="zoom:216%">
+   
   </div>
 
   <div class = "modal-footer">
-   <button type = "button" class = "btn btn-primary" id="donateNow">
+   <button type = "button" class = "btn btn-primary" id="enterToken">
      Donate
    </button>
  </div>
@@ -36,6 +36,3 @@
 
 </div><!-- /.modal -->
 </template>
-
-
-
